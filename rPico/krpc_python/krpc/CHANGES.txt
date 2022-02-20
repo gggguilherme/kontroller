@@ -1,0 +1,116 @@
+v0.4.8
+ * Update to protobuf v3.6.1
+ * Add condition variable and callbacks that are called when a stream update message is processed (#473)
+
+v0.4.6
+ * Add methods to remove callbacks from streams and events (#451)
+
+v0.4.5
+ * Update to protobuf v3.5.1
+
+v0.4.3
+ * Add rate control for streams (#116, #141)
+
+v0.4.0
+ * Updated protocol in line with server changes
+ * Remove connection retries. Client will now fail fast if it fails to connect to the server
+ * Reorder parameters to krpc.connect() so that name is first - to be consistent with other client libraries
+ * Add support for RPCs and streams to throw exceptions
+ * Add stream waiting and update callbacks
+ * Add support for events
+ * Don't execute an initial RPC when a stream is created, wait for the first update instead
+
+v0.3.10
+ * Update to protobuf v3.4.0
+
+v0.3.9.post1
+ * Fix compatibility with protobuf v3.4.0
+
+v0.3.9
+ * Update to protobuf v3.3.0
+
+v0.3.8.post1
+ * Rename protobuf generated files to *_pb2.py to fix issue with protobuf 3.2.0 (#378, #376)
+ * Relax package requirements to protobuf >= 3
+
+v0.3.8
+ * Clean up code to meet PEP 8 guidelines
+ * Update to protobuf v3.2.0
+ * Change package requirements to protobuf >= 3.2
+
+v0.3.7
+ * Fix bug parsing nested collection types
+
+v0.3.6
+ * Fix values not being documented in generated enumeration classes
+
+v0.3.5
+ * Add check for number of elements in a tuple before invoking an RPC (#276)
+ * Fix unicode issue (#284)
+
+v0.3.4
+ * Update protobuf to v3.0.0-beta-3
+
+v0.2.2
+ * Fix exception when stream thread shuts down (#197)
+ * Remove support for protobuf enumeration and custom protobuf messages
+ * Add comparison methods to remote objects so that they are sortable
+
+v0.2.1
+ * Fix bug with setup.py on Windows
+ * Add version number to python module
+
+v0.2.0
+ * Update protobuf 3.0.0-beta-2
+ * Fix bug in keyword arg handling (#168)
+ * Removed TestServer.exe and associated binaries from release archive
+
+v0.1.12
+ * Server connection method now retries 10 times every 0.1 seconds
+
+v0.1.11
+ * Docstrings generated from documentation returned by KRPC.GetServices (#31)
+
+v0.1.10
+ * Bump version number
+
+v0.1.9
+ * Bump version number
+
+v0.1.8
+ * Improved dynamic creation of service methods
+ * Support for static class methods (#106)
+ * Improve enums: return an Enum object instead of an int
+ * Fix bug with types across multiple connections (#110)
+
+v0.1.7
+ * Support for Python 3
+ * Upgrade to Protocol Buffers 3.0.0-alpha-1
+ * Checking of address and port parameters before connecting
+ * Connecting to the stream server is now optional
+ * Improve detection of protobuf message and enum types and improve support for 3rd party types (#38)
+ * Fix unicode decoding/encoding bugs (#104)
+
+v0.1.6
+ * None, bumped version to match server version
+
+v0.1.5
+ * Add Client.close()
+
+v0.1.4
+ * Improved network code to fix bugs and make it more robust
+ * Add python version checks
+ * Make connections thread safe
+
+v0.1.3
+ * Fix bug with encoding/decoding of infinities and NaNs
+
+v0.1.2
+ * Convert parameter names to snake_case
+
+v0.1.1
+ * Update example script
+
+v0.1.0
+ * Initial pre-release
+
