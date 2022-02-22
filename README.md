@@ -34,3 +34,13 @@ so proceed with caution and a lot of things might change
 - using an arduino and a raspberry Pi Pico together
 - radio transceivers
 - integrating 3d printed models with the electronics properly
+
+also one last thing if you don't mind:
+# I'm freaking out about this:
+I don't want to be a criminal and obey all the rules of fair use and copyright for the codes and mods and libraries I'm referencing, and util I learn to do that, I won't make this repo public, I know how hurtfull copyright problems can really be and I wouldn't like to have my work stolen without even knowing it. I'll figure this out.
+##### repos I should reference
+- [kRPC](https://www.github.com/krpc/krpc)
+- [Open Joystick](https://github.com/bhowiebkr/open-joystick)
+(I took some ideas from this to design my stuff, it ended up being completely different, BUT I'd still like to share it)
+- [JunOS (not made yet, also it's my own project so it kinda doesn't matter idk)]()
+- [kOS mod](https://github.com/KSP-KOS/KOS)
