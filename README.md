@@ -29,7 +29,7 @@ so proceed with caution and a lot of things might change
 - interaction with displays through JunOS
 - cool sounds
 
-# things (i'm going to) learnt with this cool project
+# things I'm learning with this cool project
 - how to use two or more microcontrollers at the same time
 - using an arduino and a raspberry Pi Pico together
 - radio transceivers
