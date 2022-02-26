@@ -11,7 +11,7 @@ so proceed with caution and a lot of things might change
 - throttle control -done
 - translation control -done
 - button panel -half done
-- JunOS display
+- JunOS display (JunOS is what I'm calling the information displays but it needed a cool name so yeah)
 ## electronics
 - display
 - potentiometers
