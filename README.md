@@ -1,16 +1,16 @@
 # kontroller
  
-this project is -not close to being ready- 
+this project is -getting on it's paces but hang in there, there's lots of work to do-
 #
 so proceed with caution and a lot of things might change
 
 # things to do so the project is ready:
 
 ## model the controller
-- attitude control
-- throttle control
-- translation control
-- button panel
+- attitude control -done
+- throttle control -done
+- translation control -done
+- button panel -half done
 - JunOS display
 ## electronics
 - display
@@ -35,12 +35,9 @@ so proceed with caution and a lot of things might change
 - radio transceivers
 - integrating 3d printed models with the electronics properly
 
-also one last thing if you don't mind:
-# I'm freaking out about this:
-I don't want to be a criminal and obey all the rules of fair use and copyright for the codes and mods and libraries I'm referencing, and util I learn to do that, I won't make this repo public, I know how hurtfull copyright problems can really be and I wouldn't like to have my work stolen without even knowing it. I'll figure this out.
-##### repos I should reference
-- [kRPC](https://www.github.com/krpc/krpc)
-- [Open Joystick](https://github.com/bhowiebkr/open-joystick)
-(I took some ideas from this to design my stuff, it ended up being completely different, BUT I'd still like to share it)
-- [JunOS (not made yet, also it's my own project so it kinda doesn't matter idk)]()
+# References
+- [kRPC mod](https://www.github.com/krpc/krpc)
 - [kOS mod](https://github.com/KSP-KOS/KOS)
+- [LCD Display 3D Model](https://grabcad.com/library/16-x-2-lcd-display-module)
+- [Open Joystick](https://github.com/bhowiebkr/open-joystick)
+(I took some ideas from open-joystick to design my stuff, it ended up being completely different, BUT I'd still like to share it because it's really cool and I learned a lot)
