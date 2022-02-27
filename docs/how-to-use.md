@@ -8,6 +8,7 @@ this should be the use manual for what you could use it for on Kerbal Space Prog
 for now it's more _the dream I want this project to be,_ and a sort of feature planner
 
 ![dream](images/dream.png)
+![kontroller](images/Kontroller.png)
 
 # how to connect to krpc and ksp
 
