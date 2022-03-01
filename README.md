@@ -4,36 +4,7 @@ this project is -getting on it's paces but hang in there, there's lots of work t
 #
 so proceed with caution and a lot of things might change
 
-# things to do so the project is ready:
-
-## model the controller
-- attitude control -done
-- throttle control -done
-- translation control -done
-- button panel -half done
-- JunOS display (JunOS is what I'm calling the information displays but it needed a cool name so yeah)
-## electronics
-- display
-- potentiometers
-- lots of buttons
-- radio transceiver
-- batteries
-- battery charger
-- put everything on those cool pcbs and learn to solder properly
-- speaker
-## code
-- kRPC communication with Kerbal Space Program through arduino
-- getting input from controllers and buttons
-- radio transreceiver
-- kOS integration
-- interaction with displays through JunOS
-- cool sounds
-
-# things I'm learning with this cool project
-- how to use two or more microcontrollers at the same time
-- using an arduino and a raspberry Pi Pico together
-- radio transceivers
-- integrating 3d printed models with the electronics properly
+![Kontroller](images/Kontroller.PNG)
 
 # References
 - [kRPC mod](https://www.github.com/krpc/krpc)
@@ -42,5 +13,9 @@ so proceed with caution and a lot of things might change
 - [OLED Display 3D Model](https://grabcad.com/library/oled-128-x-64-display-1)
 - [14 Segment Numerical Display 3D Model](https://grabcad.com/library/dual-digit-numeric-display-dc56-11-or-da56-11-1)
 - [Trimmer Potentiometer 3D Model](https://grabcad.com/library/potentiometer-12)
+- [Switch 3D Model 1](https://grabcad.com/library/small-power-switches-rocker-type-10-5x15mm-1)
+- [Switch 3D Model 2](https://grabcad.com/library/lockless-on-off-push-button-switch-press-reset-switch-pbs-110-1)
+- [Switch 3D Model 3](https://grabcad.com/library/spdt-print-toggle-switch-pcb-mount-1)
+- [G-Clamp 3D Model Thingiverse](https://www.thingiverse.com/thing:1673030)
 - [Open Joystick](https://github.com/bhowiebkr/open-joystick)
 (I took some ideas from open-joystick to design my stuff, it ended up being completely different, BUT I'd still like to share it because it's really cool and I learned stuff)
