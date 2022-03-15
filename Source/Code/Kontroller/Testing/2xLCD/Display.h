@@ -8,11 +8,20 @@ class Display
     void _loop();
     void _init();
     void show_scrolling_message(String message, int row, int _delay);
-  private:              
+
+    void interact();
+    void next();
+    void previous();
+    void back();
+    
+  private:               
     unsigned short int width, height;
     LiquidCrystal *lcd;
     void flashscreen();
     
+    double showing_data[4];
+    
+    void show_scrolling_message_loop();
     int scrollMsgRow, scrollMsgCollum, scrollMsgIndex, scrollMsgDelay;
     bool showingScrollMsg;
     String showScrollMsg;

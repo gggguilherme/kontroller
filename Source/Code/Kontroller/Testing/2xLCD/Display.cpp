@@ -17,36 +17,41 @@ void Display::_init()
   this->flashscreen();
 }
 
+void Display::flashscreen()
+{
+  this->show_scrolling_message("Kontroller - Kerbal Space Program - Starting . . . ", 0, 50);
+}
+
 void Display::_loop()
+{
+  show_scrolling_message_loop();
+}
+
+void Display::show_scrolling_message_loop()
 {
   if(showingScrollMsg && millis() - last_millis > scrollMsgDelay)
   {
-    showScrollMsg = scrollMsg.substring(0, scrollMsgIndex);
-    lcd->setCursor(scrollMsgCollum, scrollMsgRow);
-    if (scrollMsgCollum < 0)
-    {
-      scrollMsg.remove(1,1);
-      showScrollMsg.remove(1,1);
-      lcd->setCursor(0, scrollMsgRow);
-    }
-    if(scrollMsgIndex > scrollMsg.length());
+    if (scrollMsgCollum == scrollMsg.length())
     {
       showingScrollMsg = false;
-      lcd->setCursor(0, 2);
-      lcd->print("finished");
       return;
     }
-    lcd->print(showScrollMsg);
-    scrollMsgCollum--;
-    scrollMsgIndex++;
+    scrollMsgCollum --;
+      int position_x = max(scrollMsgCollum, 0);
+    int position_y = scrollMsgRow;
+    scrollMsgIndex = min(scrollMsgIndex+1, scrollMsg.length());
+    int startingStringIndex = 0;
+    if(position_x == 0)
+    {
+      startingStringIndex = -scrollMsgCollum;
+    }
+    String showString = scrollMsg.substring(startingStringIndex, scrollMsgIndex);
+    lcd->setCursor(position_x, position_y);
+    lcd->print(showString);
     last_millis = millis();
   }
 }
 
-void Display::flashscreen()
-{
-  this->show_scrolling_message("Kontroller - Kerbal Space Program - Starting . . .", 0, 150);
-}
 
 void Display::show_scrolling_message(String message, int row, int _delay)
 {
@@ -55,4 +60,5 @@ void Display::show_scrolling_message(String message, int row, int _delay)
    this->scrollMsgDelay = _delay;
    this->scrollMsgCollum = width;
    this->showingScrollMsg = true;
+   this->scrollMsgIndex = 0;
 }
